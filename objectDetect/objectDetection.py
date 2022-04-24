@@ -12,3 +12,8 @@ while True:
     masking = objectDetect.apply(frame)
     _, masking = cv2.threshold(masking, 254, 255, cv2.THRESH_BINARY)
     countours, _ = cv2.findContours(masking, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    for count in countours:
+        area = cv2.contourArea(count)
+        if area > 5000:
+            x, y, w, h = cv2.boundingRect(count)
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)

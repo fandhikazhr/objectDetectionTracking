@@ -17,3 +17,9 @@ while True:
         if area > 5000:
             x, y, w, h = cv2.boundingRect(count)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
+    
+    cv2.imshow("Mask", masking)
+    cv2.imshow("Video", frame)
+    key = cv2.waitKey(30)
+    if key == 27:
+        break

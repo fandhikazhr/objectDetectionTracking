@@ -1,5 +1,8 @@
 # objectDetectionTracking
 Learn about object detection and tracking with python script 👀
+- Some References
+
+On `track.py`script, we use the cv2.TrackerMOSSE_create() and cv2 functions.
 
 # Preview
 

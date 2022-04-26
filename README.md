@@ -15,3 +15,5 @@ pip install --user opencv-contrib-python==3.4.13.47
 # Preview
 
 ![objectDetect](https://user-images.githubusercontent.com/99522867/165229017-6279a02b-5e14-4949-8dec-4583d85514c5.gif)
+
+![prevTrack](https://user-images.githubusercontent.com/99522867/165406073-25790f10-835d-4a2a-a5ea-223edc7c1264.gif)

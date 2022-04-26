@@ -22,3 +22,8 @@ while True:
         startTrack(img, tracker)
     else :
         cv2.putText(img, "Lost Object", (75,50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,0,255), 3)
+
+    cv2.imshow("Sample", img)
+    key = cv2.waitKey(40)
+    if key == 27:
+        break
